@@ -162,7 +162,7 @@ nav{
 	position: absolute;
 	left: 50px;
 	bottom: 50px;
-	padding-top: 4px;
+	margin-top: 10px;
 	display: flex;
  
 }
