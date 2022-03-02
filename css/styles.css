@@ -4,7 +4,7 @@ body{
     margin:0px;
     padding:0px;
     background-color: #161616;
-	font-family: 'Architects Daughter';
+    font-family: 'Chakra Petch';
 
 	
 
@@ -32,6 +32,7 @@ a{
 
 }
 nav{
+    font-family: 'Architects Daughter';
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +63,7 @@ nav{
 
 .prof li {
     padding: 10px 15px;
-    color: #6c707c;
+    color: #F3D250;
     font-size: 20px;
 }
 
@@ -155,7 +156,7 @@ nav{
 
 }
 .res-btn:hover{
-    background-color: #131313;
+    background-color: #F3D250;
     transition: all ease 0.5s;
 }
 
@@ -177,7 +178,7 @@ nav{
 	font-size: 35px;
 }
 .social a:hover i{
-	color:#dd7732;
+	color:#F3D250;
 	transition: all ease 0.5s;
 }
 
@@ -836,7 +837,7 @@ width: 100%;
   }
   .container p span.typed-text {
 	font-weight: normal;
-	color: "#F3D250";
+	color: #F3D250;
   }
   .container p span.cursor {
 	display: inline-block;
