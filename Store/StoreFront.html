@@ -1,0 +1,1003 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template  -->
+    <link href="./css/styles.css" rel="stylesheet">
+
+    <style>
+      body{
+        
+
+        background:  #272727;
+        font-family: 'Rajdhani', sans-serif;
+        
+      
+      }
+      
+      
+      .navbar{
+        background-color: #272727;
+        
+        
+        padding-bottom: 32px;
+      
+        
+      }
+      
+      
+      * {
+        transition: 0.3s;
+      }
+      
+      #carouselExampleIndicators{
+        width: 100%;
+        height: 100%;
+        
+      }
+      
+      .products img{
+        padding: 0 15px;
+      
+          display: block;
+          margin: 15px 0px;
+          border-bottom: solid;
+          
+          border-color: #ffe400;
+          border-radius: 300px 30px 300px 300px;
+          
+        }
+       .products img:hover{
+        
+            border-radius: 30px 90px 30px 30px;
+          
+       }
+      
+       .carousel-inner{
+        width:100%;
+          
+          max-height: 680px !important;
+          
+          
+          filter: blur(1px);
+        }
+      
+      
+      
+      .carousel-item .img-fluid {
+        width:100%;
+        height:100%;
+      }
+      
+      .top-buffer { margin-top:20px; }
+      
+      .tiny-buffer{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+      }
+      
+      .button-buffer{
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      
+      .nav-link {
+        color:  #ff6524 !important;
+        font-size: large !important;
+      }
+      
+      
+      
+      .nav-item:hover{
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+      
+      }
+      
+      .overlay:after {
+        content:"";
+        display:block;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background:rgba(39, 39, 39, 0.5)
+      }
+      
+      
+      .caption{
+        color: #ff6524;
+        font-size: x-large !important;
+      }
+      
+      .close{
+        color: #ff6524;
+        font-size: 40px;
+        
+      }
+      
+      
+      .navbar-brand{
+        padding-left: 100px;
+      }
+      
+      .modal-body, .modal-title, .modal-footer{
+        background: #272727;
+        
+      }
+      
+      .display-4{
+        color:#ff6524;
+        font-size:xx-large;
+        text-align: center;
+        margin-top: 15px;
+      }
+      
+      .modal img{
+        border-radius: 50%;
+        border-bottom: solid;
+          
+        border-color: #ffe400;
+      }
+      
+      
+      .display-3{
+        text-align: left  !important;
+        font-size: x-large;
+        color:#ff6524;
+        margin: 0px;
+        padding: 0px;
+      }
+      
+      #addToCart{
+        background-color:#1fa76c;
+        border-color: #1fa76c;
+      }
+      
+      #submitButton{
+        background-color: #272727;
+        border-color: white ;
+      }
+      
+      
+      #contactPage, #aboutPage{
+        display: none;
+      }
+      
+      #formEmail, #formSubject{
+        max-width: 300px;
+        background-color: #272727;
+        color: #ff6524
+        
+        
+      }
+      
+      #formMsg{
+        max-width: 800px;
+        background-color: #272727;
+        color: #ff6524
+      }
+      
+      input[type="email"]:focus, input[type="text"]:focus {
+        border-color: #ffe400;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #ffe400;
+        outline: 0 none;
+      }
+      
+      #formMsg:focus{
+        border-color: #ffe400;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #ffe400;
+        outline: 0 none;
+      
+      }
+      
+      .form-group{
+        margin-left: 10px;
+        
+      }
+      
+      #emailError, #subjectError, #messageError{
+        color: #ff6524;
+        display: none;
+      }
+      
+      .formError {
+            font-weight: 800;
+            color: #ff6524;
+            display: inline-block !important;
+        }
+      
+      .alert {
+        max-width: 300px;
+      }
+      
+      p {
+        color: #ffe400;
+        padding-left: 10px;
+        font-size: large;
+      }
+      
+      #logo1{
+        
+        filter: invert(86%) sepia(42%) saturate(1503%) hue-rotate(358deg) brightness(150%) contrast(125%);
+      }
+      
+      #logo2{
+        
+        filter: invert(49%) sepia(97%) saturate(336%) hue-rotate(102deg) brightness(100%) contrast(130%);
+      }
+      
+      
+      #logo3{
+        
+        filter: invert(57%) sepia(58%) saturate(4276%) hue-rotate(342deg) brightness(100%) contrast(125%);
+      }
+      
+      #logoTrio{
+        padding-top: 150px;
+      }
+      
+      #aboutPage{
+        padding-top: 15px;
+      }
+      
+      #emailInvalid{
+        display: none;
+      }
+    </style>
+
+    
+
+    <script type="text/javascript">
+    
+    function showContactPage()
+    {
+      homePage.style.display = "none";
+      contactPage.style.display = "block";
+      aboutPage.style.display = "none";
+	  
+	  $("#emailError").hide();
+      $("#emailInvalid").hide();
+      $("#emailFlag").removeClass("formError");
+
+      $("#subjectFlag").removeClass("formError");
+      $("#subjectError").hide();
+
+      $("#messageFlag").removeClass("formError");
+      $("#messageError").hide();
+    }
+
+    function showHomePage()
+    {
+      homePage.style.display = "block";
+      contactPage.style.display = "none";
+      aboutPage.style.display = "none";
+    }
+
+    function showAboutPage()
+    {
+      homePage.style.display = "none";
+      contactPage.style.display = "none";
+      aboutPage.style.display = "block";
+
+    }
+
+    function getFormData(){
+      var email = $("#formEmail").val();
+      var subject = $("#formSubject").val();
+      var message = $("#formMsg").val();
+      var errors = 0;
+      var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+     
+
+      
+
+      if (email == ""){
+        errors = 1;
+        $("#emailInvalid").hide();
+        $("#emailFlag").addClass("formError");
+        $("#emailError").show();
+        
+      } else if (emailPattern.test(email) == false) {
+        errors = 1;
+        $("#emailError").hide();
+        $("#emailFlag").addClass("formError");
+        $("#emailInvalid").show();
+          
+
+      } else {
+        $("#emailError").hide();
+        $("#emailInvalid").hide();
+        $("#emailFlag").removeClass("formError");
+      }
+
+     
+
+      if (subject == ""){
+        errors = 1;
+        $("#subjectFlag").addClass("formError");
+        $("#subjectError").show();
+      } else {
+        $("#subjectFlag").removeClass("formError");
+        $("#subjectError").hide();
+      }
+
+      if (message == ""){
+        errors = 1;
+        $("#messageFlag").addClass("formError");
+        $("#messageError").show();
+      } else {
+        $("#messageFlag").removeClass("formError");
+        $("#messageError").hide();
+      }
+
+      if (errors == 0)
+      {
+        var dataForServer = "&email=" + email + "&subject=" + subject + "&message=" + message;
+        
+        alert("data will be sent to the server");
+        console.log(dataForServer);
+
+        $.ajax({
+                    type: "POST",
+                    url: "store.php",
+                    data: dataForServer,
+                    success: function(msg) {
+                        if (msg != "") alert (msg);
+                    }
+                })
+      }
+
+    }
+    
+    </script>
+
+  </head>
+
+  <body>
+
+
+    <nav class="navbar navbar-expand-md navbar-dark .bg-transparent fixed-top">
+
+      <a class="navbar-brand" href="#">THE DICE STORE.</a>
+      <img src="images/Logo3.png" class="img-fluid" id="logo3" alt="">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" onclick="javascript:showHomePage(); return false;" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="javascript:showAboutPage(); return false;" href="#">About</a>
+          </li>
+          <li class="nav-item" id="contact">
+            <a class="nav-link" onclick="javascript:showContactPage(); return false;" " href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+
+    <!--Start of About page code-->
+    <div class="m-5 pb-5" id="aboutPage">
+      <p>Here is our About page! You could put all sorts of things here. Maybe the history of the company, or what inspired you to start it.
+        Perhaps some photos of the owners of the company, or bios about the whole dev team. The world is really your oyster when it comes to what you put here.
+      </p>
+
+      <p>Lookit! You can even put more than one paragraph, and this is what that would look like. Sometimes you just have too many great things you 
+        want to say, and it can't fit in just one paragraph. You can put as much information here as you want, and no one can tell you not to! 
+      </p>
+      <br><br>
+
+      <P>Lets finish this off with a trio of dice that match our color scheme!</P>
+
+      <div class="d-flex justify-content-center" id="logoTrio">
+        <img src="images/Logo1.png" class="img-fluid" id="logo1" alt="">
+        <img src="images/Logo2.png" class="img-fluid" id="logo2" alt="">
+        <img src="images/Logo3.png" class="img-fluid" id="logo3" alt="">
+      </div>
+
+    </div>
+    
+
+
+    <!--End of about page code-->
+
+    <!--Start of Contact Page code-->
+    <div class="m-5 pb-5" id="contactPage">
+      <p>Have a question? Send us a message!</p> 
+      <p>Fill out the form below and we will get back to you as soon as we can!</p>
+      <form id="form1" name="form1" method="form1" action="javascript:getFormData();">
+        <div class="form-group">
+          
+          <span id="emailFlag"><b>*required</b></font></span>
+          <input type="text" class="form-control" id="formEmail" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <div class="alert alert-danger" role="alert" id="emailError">
+            Opps! You forgot to enter your email!
+          </div>
+          <div class="alert alert-warning" role="alert" id="emailInvalid">
+            Opps! Your email was invalid!
+          </div>
+          
+          
+        </div>
+
+        <div class="form-group">
+          <span id="subjectFlag"><b>*required</b></font></span>
+          <input class="form-control" type="text" placeholder="Subject" id="formSubject">
+          <div class="alert alert-danger" role="alert" id="subjectError">
+            Opps! You forgot to enter a subject!
+          </div>
+          
+        </div>
+
+        <div class="form-group">
+          <span id="messageFlag"><b>*required</b></font></span>
+          <textarea class="form-control" id="formMsg" rows="8" placeholder="Enter your Message"></textarea>
+          <div class="alert alert-danger" role="alert" id="messageError">
+            Opps! You forgot to enter a message!
+          </div>
+          
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+        </div> 
+      </form>
+    </div>
+    <!--End of Contact Page-->
+
+    <!--Start of Product Page-->
+    
+    <div class="homePage" id="homePage">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active" id="slider1">
+
+            <div class="overlay">
+              <img class="d-block w-100" src="./images/slider-1.jpg" alt="First slide">
+            </div>
+            
+          </div>
+          <div class="carousel-item">
+            
+            <div class="overlay">
+              <img class="d-block w-100" src="./images/slider-2.jpg" alt="Second slide">
+            </div>
+            
+          </div>
+          <div class="carousel-item">
+            
+            <div class="overlay">
+              <img class="d-block w-100" src="./images/slider-3.jpg" alt="Third slide">
+            </div>
+            
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+          
+ 
+        <!--Product Grid Start-->
+        <div class="top-buffer">
+
+          <div class="container" id="gallery">
+
+
+            <div class="products">
+              <div class="row">
+                <div class="col-sm">
+                  <img src="./images/vampiric-1.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-sm">
+                  <img src="./images/thunder-of-dragons-silver-1.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-sm">
+                  <img src="./images/skull-moss-1-web.jpg" class="img-fluid" alt="Responsive image">
+                </div>  
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="caption text-center">Vamperic Dice Set</div>  
+              </div>
+              <div class="col">
+                <div class="caption text-center">Thunder Dragon Dice Set</div>  
+              </div>
+              <div class="col">
+                <div class="caption text-center">Mossy Skull Dice Set</div>  
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="caption text-center">$20.99</div>  
+              </div>
+              <div class="col">
+                <div class="caption text-center">$20.99</div>  
+              </div>
+              <div class="col">
+                <div class="caption text-center">$20.99</div>  
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="button-buffer">
+                  <div class="caption text-center">
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal1">
+                      View Product
+                    </button>
+                  </div>
+                </div>  
+              </div>
+              <div class="col">
+                <div class="button-buffer">
+                  <div class="caption text-center">
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal2">
+                      View Product
+                    </button>
+                  </div>
+                </div>  
+              </div>
+              <div class="col">
+                <div class="button-buffer">
+                  <div class="caption text-center">
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal3">
+                      View Product
+                    </button>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+ 
+        <div class="top-buffer">
+          <div class="container" id="gallery">
+
+            <div class="products">
+              <div class="row">
+                <div class="col-sm">
+                  <img src="./images/eldritch-magic-1-web.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-sm">
+                  <img src="./images/fighter-dice-1.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-sm">
+                  <img src="./images/ro-chrome-3_.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="caption text-center">Eldritch Magic Dice Set</div>  
+              </div>
+              <div class="col">
+                <div class="caption text-center">Fighter Class Dice Set</div>  
+              </div>
+              <div class="col">
+                <div class="caption text-center">Galaxy Dice Set</div>  
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="caption text-center">$20.99</div>  
+              </div>
+              <div class="col">
+                <div class="caption text-center">$20.99</div>  
+              </div>
+              <div class="col">
+                <div class="caption text-center">$20.99</div>  
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="button-buffer">
+                  <div class="caption text-center">
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal4">
+                      View Product
+                    </button>
+                  </div>
+                </div>  
+              </div>
+              <div class="col">
+                <div class="button-buffer">
+                  <div class="caption text-center">
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal5">
+                      View Product
+                    </button>
+                  </div>
+                </div>  
+              </div>
+              <div class="col">
+                <div class="button-buffer">
+                  <div class="caption text-center">
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal6">
+                      View Product
+                    </button>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!--Product Grid End-->
+
+
+        <!--Start Bootstrap Modal-->
+      <div class="modal fade" id="myModal1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            
+            <div class="modal-title">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <p class="display-4">Vamperic Dice Set</p>
+              
+            </div>
+
+            <div class="modal-body">
+
+              <img src="./images/vampiric-1.jpg" class="img-fluid" alt="Responsive image" id="main-img">
+
+              <div class="tiny-buffer">
+                <div class="row">
+                  <div class="col">
+
+                    <a data-fancybox="gallery1" href="./images/vampiric-1.jpg">
+                      <img src="./images/tiny-vamp-1.jpg" class="img-fluid" alt="Responsive image" data-toggle="modal">
+                    </a>
+                    
+                  </div>
+                  <div class="col">
+                    <a data-fancybox="gallery1" href="./images/vampiric-2.jpg">
+                      <img src="./images/tiny-vamp-2.jpg" class="img-fluid" alt="Responsive image">
+                    </a>
+                    
+                  </div>
+                  <div class="col">
+                    <a data-fancybox="gallery1" href="./images/vampiric-3.jpg">
+                      <img src="./images/tiny-vamp-3.jpg" class="img-fluid" alt="Responsive image">
+                    </a>
+                    
+                  </div>
+                </div>
+
+              </div>
+              
+              <p class="display-3">Includes: 1d20, 1d12, 2d10, 1d8, 1d6, 1d4.</p>
+              <br>
+              <p class="display-3">Price: 20.99</p>
+
+            </div>
+
+            <div class="modal-footer">
+              
+              <div class="col text-center">
+                <button type="button" class="btn btn-dark m" id="addToCart" data-dismiss="modal">Add To Cart</button>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="myModal2">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            
+            <div class="modal-title">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <p class="display-4">Thunder Dragon Dice Set</p>
+            </div>
+
+            <div class="modal-body">
+              <img src="./images/thunder-of-dragons-silver-1.jpg" class="img-fluid" alt="Responsive image">
+
+              <div class="tiny-buffer">
+                <div class="row">
+                  <div class="col">
+
+                    <a data-fancybox="gallery2" href="./images/thunder-of-dragons-silver-1.jpg">
+                      <img src="./images/tiny-thunder-1.jpg" class="img-fluid" alt="Responsive image" data-toggle="modal">
+                    </a>
+                    
+                  </div>
+                  <div class="col">
+                    <a data-fancybox="gallery2" href="./images/thunder-of-dragons-silver-2.jpg">
+                      <img src="./images/tiny-thunder-2.jpg" class="img-fluid" alt="Responsive image">
+                    </a>
+                    
+                  </div>
+                  <div class="col">
+                    <a data-fancybox="gallery2" href="./images/thunder-of-dragons-silver-3.jpg">
+                      <img src="./images/tiny-thunder-3.jpg" class="img-fluid" alt="Responsive image">
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              <p class="display-3">Includes: 1d20, 1d12, 2d10, 1d8, 1d6, 1d4.</p>
+              <br>
+              <p class="display-3">Price: 20.99</p>
+
+            </div>
+
+            <div class="modal-footer">
+              
+              <div class="col text-center">
+                <button type="button" class="btn btn-dark m" id="addToCart" data-dismiss="modal">Add To Cart</button>
+              </div>
+          
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="myModal3">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            
+            <div class="modal-title">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <p class="display-4">Mossy Skull Dice Set</p>
+              
+            </div>
+
+            <div class="modal-body">
+              <img src="./images/skull-moss-1-web.jpg" class="img-fluid" alt="Responsive image">
+
+              <div class="tiny-buffer">
+                <div class="row">
+                  <div class="col">
+
+                    <a data-fancybox="gallery2" href="./images/skull-moss-1-web.jpg">
+                      <img src="./images/tiny-skull-1.jpg" class="img-fluid" alt="Responsive image" data-toggle="modal">
+                    </a>
+                    
+                  </div>
+                  <div class="col">
+                    <a data-fancybox="gallery2" href="./images/skull-moss-2-web.jpg">
+                      <img src="./images/tiny-skull-2.jpg" class="img-fluid" alt="Responsive image">
+                    </a>
+                    
+                  </div>
+                  <div class="col">
+                    <a data-fancybox="gallery2" href="./images/skull-moss-web.jpg">
+                      <img src="./images/tiny-skull-3.jpg" class="img-fluid" alt="Responsive image">
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              <p class="display-3">Includes: 1d20, 1d12, 2d10, 1d8, 1d6, 1d4.</p>
+              <br>
+              <p class="display-3">Price: 20.99</p>
+
+            </div>
+
+            <div class="modal-footer">
+              
+              <div class="col text-center">
+                <button type="button" class="btn btn-dark m" id="addToCart" data-dismiss="modal">Add To Cart</button>
+              </div>
+          
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="myModal4">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            
+            <div class="modal-title">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <p class="display-4">Eldritch Magic Dice Set</p>  
+            </div>
+
+            <div class="modal-body">
+              <img src="./images/eldritch-magic-1-web.jpg" class="img-fluid" alt="Responsive image">
+
+              <div class="tiny-buffer">
+                <div class="row">
+                  <div class="col">
+
+                    <a data-fancybox="gallery2" href="./images/eldritch-magic-1-web.jpg">
+                      <img src="./images/tiny-eldritch-1.jpg" class="img-fluid" alt="Responsive image" data-toggle="modal">
+                    </a>
+                    
+                  </div>
+                  <div class="col">
+                    <a data-fancybox="gallery2" href="./images/eldritch-magic-2-web.jpg">
+                      <img src="./images/tiny-eldritch-2.jpg" class="img-fluid" alt="Responsive image">
+                    </a>
+                    
+                  </div>
+                  <div class="col">
+                    <a data-fancybox="gallery2" href="./images/eldritch-magic-3-web.jpg">
+                      <img src="./images/tiny-eldritch-3.jpg" class="img-fluid" alt="Responsive image">
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              <p class="display-3">Includes: 1d20, 1d12, 2d10, 1d8, 1d6, 1d4.</p>
+              <br>
+              <p class="display-3">Price: 20.99</p>
+
+            </div>
+
+            <div class="modal-footer">
+              
+              <div class="col text-center">
+                <button type="button" class="btn btn-dark m" id="addToCart" data-dismiss="modal">Add To Cart</button>
+              </div>
+          
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="myModal5">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            
+            <div class="modal-title">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <p class="display-4">Fighter Class Dice Set</p>
+            </div>
+
+            <div class="modal-body">
+              <img src="./images/fighter-dice-1.jpg" class="img-fluid" alt="Responsive image">
+
+              <div class="tiny-buffer">
+                <div class="row">
+                  <div class="col">
+
+                    <a data-fancybox="gallery2" href="./images/fighter-dice-1.jpg">
+                      <img src="./images/tiny-fighter-1.jpg" class="img-fluid" alt="Responsive image" data-toggle="modal">
+                    </a>
+                    
+                  </div>
+                  <div class="col">
+                    <a data-fancybox="gallery2" href="./images/fighter-dice-2.jpg">
+                      <img src="./images/tiny-fighter-2.jpg" class="img-fluid" alt="Responsive image">
+                    </a>
+                    
+                  </div>
+                  <div class="col">
+                    <a data-fancybox="gallery2" href="./images/fighter-dice-3.jpg">
+                      <img src="./images/tiny-fighter-3.jpg" class="img-fluid" alt="Responsive image">
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              <p class="display-3">Includes: 1d20, 1d12, 2d10, 1d8, 1d6, 1d4.</p>
+              <br>
+              <p class="display-3">Price: 20.99</p>
+
+            </div>
+
+            <div class="modal-footer">
+              
+              <div class="col text-center">
+                <button type="button" class="btn btn-dark m" id="addToCart" data-dismiss="modal">Add To Cart</button>
+              </div>
+          
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="myModal6">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            
+            <div class="modal-title">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <p class="display-4">Galaxy Dice Set</p>
+              
+            </div>
+
+            <div class="modal-body">
+              <img src="./images/ro-chrome-3_.jpg" class="img-fluid" alt="Responsive image">
+
+              <div class="tiny-buffer">
+                <div class="row">
+                  <div class="col">
+
+                    <a data-fancybox="gallery2" href="./images/ro-chrome-3_.jpg">
+                      <img src="./images/tiny-chrome-1.jpg" class="img-fluid" alt="Responsive image" data-toggle="modal">
+                    </a>
+                    
+                  </div>
+                  <div class="col">
+                    <a data-fancybox="gallery2" href="./images/ro-chrome-2.jpg">
+                      <img src="./images/tiny-chrome-2.jpg" class="img-fluid" alt="Responsive image">
+                    </a>
+                    
+                  </div>
+                  <div class="col">
+                    <a data-fancybox="gallery2" href="./images/ro-chrome-4.jpg">
+                      <img src="./images/tiny-chrom-4.jpg" class="img-fluid" alt="Responsive image">
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              <p class="display-3">Includes: 1d20, 1d12, 2d10, 1d8, 1d6, 1d4.</p>
+              <br>
+              <p class="display-3">Price: 20.99</p>
+
+            </div>
+
+            <div class="modal-footer">
+              
+              <div class="col text-center">
+                <button type="button" class="btn btn-dark m" id="addToCart" data-dismiss="modal">Add To Cart</button>
+              </div>
+          
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--End Bootstrap Modal-->
+    
+    <!--End of Homepage Code-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="./js/jquery-slim.min.js"><\/script>')</script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>
