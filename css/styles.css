@@ -4,7 +4,7 @@ body{
     margin:0px;
     padding:0px;
     background-color: #161616;
-	font-family: 'Cairo', sans-serif !important;
+	font-family: 'Cairo';
 
 	
 
@@ -444,7 +444,7 @@ width: 100%;
 .c-b-heading{
 	font-size: 2rem;
 	color:#1E1E1E;
-	font-family: calibri;
+	
 	margin: 10px;
 	padding: 5px;
 	letter-spacing: 4px;
@@ -454,7 +454,7 @@ width: 100%;
 #contact-btn button{
 	color:#FFFFFF;
 	font-size: 1rem;
-	font-family: calibri;
+	
 	width:150px;
 	height: 40px;
 	margin: 10px;
