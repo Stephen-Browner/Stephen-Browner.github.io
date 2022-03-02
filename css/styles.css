@@ -24,6 +24,7 @@ a{
     background-color: #edf1df;
     position: relative;
     
+    
     background-repeat: no-repeat;
     background-size: 1330px;
     background-position: right bottom; 
@@ -122,7 +123,7 @@ nav{
 }
 
 .name{
-    
+    font-family: 'Chakra Petch';
     width: 500px;
     position:absolute;
     left: 35%;
@@ -206,6 +207,7 @@ nav{
 .about-text{
 	
 	width: 50%;
+	font-family: 'Chakra Petch';
 }
 .about-text h1{
 	font-size: 5rem;
