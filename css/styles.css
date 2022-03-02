@@ -161,8 +161,8 @@ nav{
 .social{
 	position: absolute;
 	left: 50px;
-	bottom: 50px;
-	margin-top: 10px;
+	bottom: 30px;
+	
 	display: flex;
  
 }
