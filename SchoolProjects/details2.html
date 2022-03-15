@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+    
+    
+        <!--title icon -------------------->
+    
+    
+    
+        <!--css ------------------------>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cairo:wght@500&family=Chakra+Petch:ital,wght@0,400;1,300&family=Play&family=Smooch+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Smooch+Sans&display=swap" rel="stylesheet">
+    
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+       
+    
+       
+        
+    </head>
+   <!--main -------------------->
+    <section id="projectDetails" class="projectDetails"> 
+        <!--    NAME-->
+
+        
+        
+        <div class="detailsHead " >
+
+            <div class="dhContent">
+            <h1>Java Arcade Game</h1>
+            
+      
+            <video width="400" height="300" controls autoplay loop>  <source src="../images/javaGameVid.mp4" type="video/mp4">  
+            </video>
+            
+            <section id="details-btn" >
+                
+                <a href="https://github.com/Stephen-Browner/JavaGame" target="_blank"><button >Git Repo</button></a>
+            </section>
+
+            </div>
+
+            
+            
+        </div>
+
+        <div class="detailsInfo">
+            <h1 class="detailsH">Project</h1>
+            <p class="detailsP">Create an old arcade style game from scratch in Eclipse using standard Java libraries.</p>
+
+            
+            <h1 class="detailsH">Final Product</h1>
+            <p class="detailsP"> An auto-scrolling platformer where the player tries to avoid and shoot Java icons while trying to stay on the moving platforms. After all enemies in a group are destroyed, the level and speed of the enemies increases. Game continues until the players health is reduced to 0, or the player falls off the moving platforms, after which the user inputs a name and their score gets added to an SQLite database. 
+                </p>
+            
+            <h1 class="detailsH">Learning</h1>
+            <p class="detailsP"> Greatly reinforced object-oriented programming principles, and learned how to incorporate an SQLite database into a java project. </p>
+        </div>
+
+    </section>
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/typing.js"></script>  
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var t1 = gsap.timeline();
+        var t2 = gsap.timeline();
+
+        t1.from('.detailsH', {
+            scrollTrigger: {
+                trigger: '.detailsH',
+                start: "top bottom"
+            },
+            y:50,
+            opacity: 0,
+            duration: 1,
+            stagger: 1
+        })
+
+        gsap.from(".detailsP" , {
+            scrollTrigger: {
+                trigger: '.detailsP',
+                start: "top bottom"
+            },
+            y:50,
+            opacity: 0,
+            duration: 1,
+            stagger: 1
+           
+        });
+        
+
+        gsap.from(".transition1" , {
+            scrollTrigger: {
+                trigger: '.transition1',
+                start: "top bottom"
+            },
+            y:50,
+            opacity: 0,
+            duration: 1,
+            stagger: 1
+           
+        });
+    </script>
+</body>
+</html>

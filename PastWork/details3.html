@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+    
+    
+        <!--title icon -------------------->
+    
+    
+    
+        <!--css ------------------------>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cairo:wght@500&family=Chakra+Petch:ital,wght@0,400;1,300&family=Play&family=Smooch+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Smooch+Sans&display=swap" rel="stylesheet">
+    
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+       
+    
+       
+        
+    </head>
+   <!--main -------------------->
+    <section id="projectDetails" class="projectDetails"> 
+        <!--    NAME-->
+
+        
+        
+        <div class="detailsHead " >
+
+            <div class="dhContent">
+            <h1>Local Brewery - Sales DatA Analytics</h1>
+            <img src="images/dataAnalytics.png">
+            
+
+            </div>
+
+            
+            
+        </div>
+
+        <div class="detailsInfo">
+            <h1 class="detailsH">Problem</h1>
+            <p class="detailsP"> A local brewery wanted to increase their off-site sales reach but were struggling to gain insights from the large volumes of unorganized data given to them by the third party seller.</p>
+
+            <h1 class="detailsH">Solution</h1>
+            <p class="detailsP">Sit down with the marketing team to determine what insights they wanted to get from the data. Once I had an idea of what they wanted, I went to work writing code snippets that can strip down the reports and compile them together. I then used data analytic tools to dynamically display the insights in an easy-to-read way.</p>
+            
+            <h1 class="detailsH">Outcome</h1>
+            <p class="detailsP">VBA macros were created and used to collect the breweries specific product sales information, as well as the information from their competitors, from weekly sales reports that contained approximately half a million lines of data per report. From there, a data folder was set up that would feed into a spreadsheet and various calculations were done based on the data. Product sales were compared against how local craft beer did as a whole that week, as well as how specific products did in comparison their direct competitors. This comparison was done on a monthly and every three-month basis as well. Additionally, alerts were set up to draw attention to any product that was preforming below or above its expected rate. Similar alerts were made to flag stores in which the breweries product was becoming low in stock.
+                </p>
+            
+            <h1 class="detailsH">Learning</h1>
+            <p class="detailsP">The biggest learning take-away from this project was in communicating with non-technical individuals who needed a technical solution to a problem. I was able to develop a system that was easy to follow, and I successfully navigated meetings to determine exactly what it was the marketing team wanted. This allowed me to create the system they wanted without needing to make constant edits along the way.</p>
+        </div>
+
+    </section>
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/typing.js"></script>  
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var t1 = gsap.timeline();
+        var t2 = gsap.timeline();
+
+        t1.from('.detailsH', {
+            scrollTrigger: {
+                trigger: '.detailsH',
+                start: "top bottom"
+            },
+            y:50,
+            opacity: 0,
+            duration: 1,
+            stagger: 1
+        })
+
+        gsap.from(".detailsP" , {
+            scrollTrigger: {
+                trigger: '.detailsP',
+                start: "top bottom"
+            },
+            y:50,
+            opacity: 0,
+            duration: 1,
+            stagger: 1
+           
+        });
+        
+
+        gsap.from(".transition1" , {
+            scrollTrigger: {
+                trigger: '.transition1',
+                start: "top bottom"
+            },
+            y:50,
+            opacity: 0,
+            duration: 1,
+            stagger: 1
+           
+        });
+    </script>
+</body>
+</html>
